@@ -1,4 +1,4 @@
-# azure-templates
+# Azure Resource Manager QuickStart Tempates
 
 ### PowerShell
 ```
