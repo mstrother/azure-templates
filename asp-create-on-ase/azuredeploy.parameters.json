@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "siteName": {
-      "value": "GEN-UNIQUE"
+      "value": ""
     },
     "appServicePlanName": {
-      "value": "GEN-UNIQUE"
+      "value": ""
     },
     "appServiceEnvironmentName": {
-      "value": "aspName"
+      "value": ""
     },
     "aseLocation": {
-      "value": "West US2"
+      "value": ""
     },
     "pricingTier": {
       "value": "1"

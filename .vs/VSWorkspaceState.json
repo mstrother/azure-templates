@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ase-create",
+    "\\ase-ilb-create",
+    "\\asp-create-on-ase",
+    "\\web-app-create-on-ase"
+  ],
+  "SelectedNode": "\\ase-ilb-create\\azuredeploy.parameters.json",
+  "PreviewInSolutionExplorer": false
+}
