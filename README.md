@@ -2,7 +2,7 @@
 
 This repo contains Azure Resource Manager templates that I've created and found useful.
 
-Every deployment tempalte and its associated files is contained in its own folder. The folder name describes what the template does. Usually this naming pattern looks like **ase-create**.
+Every deployment template and its associated files is contained in its own folder. The folder name describes what the template does.
 
 ### PowerShell
 ```
