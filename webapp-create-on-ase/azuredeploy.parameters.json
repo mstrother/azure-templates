@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "appName": {
-            "value": ""
+            "value": "appName"
         },
         "hostingPlanName": {
-            "value": ""
+            "value": "hostingPlanName"
         },
         "hostingEnvironment": {
-            "value": ""
+            "value": "hostingEnvironment"
         }
     }
 }
