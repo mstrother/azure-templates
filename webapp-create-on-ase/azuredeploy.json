@@ -1,0 +1,50 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Web App"
+      }
+    },
+    "hostingPlanName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Application Service Plan"
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "Location of the App Service Environment"
+      }
+    },
+    "hostingEnvironment": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Application Service Environment"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Web/sites",
+      "name": "[parameters('appName')]",
+      "apiVersion": "2016-03-01",
+      "location": "[parameters('location')]",
+      "properties": {
+        "name": "[parameters('appName')]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverFarms',parameters('hostingPlanName'))]",
+        "hostingEnvironment": "[parameters('hostingEnvironment')]",
+        "siteConfig": {
+          "pythonVersion": "Off",
+          "phpVersion": "Off",
+          "javaVersion": "Off",
+          "alwaysOn": true
+        }
+      }
+    }
+  ]
+}

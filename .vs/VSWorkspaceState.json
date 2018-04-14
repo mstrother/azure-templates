@@ -4,8 +4,9 @@
     "\\ase-create",
     "\\ase-ilb-create",
     "\\asp-create-on-ase",
-    "\\web-app-create-on-ase"
+    "\\cosmosdb-api-for-mongodb-create",
+    "\\webapp-create-on-ase"
   ],
-  "SelectedNode": "\\ase-ilb-create\\azuredeploy.parameters.json",
+  "SelectedNode": "\\cosmosdb-api-for-mongodb-create\\azuredeploy.parameters.json",
   "PreviewInSolutionExplorer": false
 }

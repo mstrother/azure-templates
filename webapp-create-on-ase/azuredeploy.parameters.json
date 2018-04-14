@@ -3,19 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "appName": {
-            "value": "pythontest11"
+            "value": ""
         },
         "hostingPlanName": {
-            "value": "asp01"
+            "value": ""
         },
-      "location": {
-        "value": "East US"
-      },
         "hostingEnvironment": {
-            "value": "ase004"
-        },
-        "serverFarmResourceGroup": {
-            "value": "devops-rg"
+            "value": ""
         }
     }
 }
