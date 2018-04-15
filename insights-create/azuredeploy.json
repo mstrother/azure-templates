@@ -1,0 +1,31 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "webAppName": {
+      "type": "string",
+      "metadata": {
+        "description": "Name of the Web App"
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "Location of the Application Insights instance"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "microsoft.insights/components",
+      "name": "[parameters('webAppName')]",
+      "apiVersion": "2015-05-01",
+      "location": "[parameters('location')]",
+      "properties": {
+        "Application_Type": "web",
+        "applicationId": "[parameters('webAppName')]"
+      }
+    }
+  ]
+}
